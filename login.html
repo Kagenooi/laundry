@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main/main.css">
+    <link rel="stylesheet" href="scss/navbarSecond/navbarSecond.css">
+    <link rel="stylesheet" href="scss/footer/footer.css">
+    <link rel="stylesheet" href="scss/login/login.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__content">
+            <a href="" class="navbar__logo">
+                <img src="images/icons/logo.svg" alt="logo" class="navbar__logo_img">
+            </a>
+            <ul class="navbar__menu">
+                <li><a href="" class="navbar__menu_link">About</a></li>
+                <li><a href="" class="navbar__menu_link">Opportunities</a></li>
+                <li><a href="" class="navbar__menu_link">Solutions</a></li>
+                <li><a href="" class="navbar__menu_link">Prices</a></li>
+                <li><a href="" class="navbar__menu_link">RoadMap</a></li>
+                <li><a href="" class="navbar__menu_link">Team</a></li>
+                <li><a href="" class="navbar__menu_link">Contact us</a></li>
+            </ul>
+            <a href="" class="navbar__btn">
+                <span class="desctop">Log in</span>
+                <span class="mobile">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00029 9.01426C10.2134 9.01426 12.0074 7.2202 12.0074 5.00713C12.0074 2.79405 10.2134 1 8.00029 1C5.78722 1 3.99316 2.79405 3.99316 5.00713C3.99316 7.2202 5.78722 9.01426 8.00029 9.01426Z" stroke="white"/>
+                        <path d="M12.0071 10.6172H12.2892C12.8751 10.6174 13.4408 10.8315 13.88 11.2193C14.3192 11.6071 14.6016 12.142 14.6743 12.7233L14.9876 15.227C15.0158 15.4525 14.9957 15.6815 14.9286 15.8987C14.8616 16.1158 14.7491 16.3163 14.5986 16.4867C14.4482 16.657 14.2632 16.7935 14.056 16.8869C13.8488 16.9803 13.6241 17.0286 13.3968 17.0286H2.6032C2.3759 17.0286 2.15119 16.9803 1.94398 16.8869C1.73678 16.7935 1.55181 16.657 1.40136 16.4867C1.25091 16.3163 1.13842 16.1158 1.07136 15.8987C1.00429 15.6815 0.984186 15.4525 1.01237 15.227L1.32493 12.7233C1.39761 12.1417 1.68029 11.6066 2.11981 11.2188C2.55932 10.8309 3.12539 10.617 3.71157 10.6172H3.99287" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+            <ul class="navbar__mobile">
+                <li>
+                    <button type="button" class="navbar__mobile_btn">
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.00391 5H24.9999" stroke="#E52440" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 12.3931H24.99" stroke="#E52440" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.00391 19.7852H24.9899" stroke="#E52440" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="navbar__mobile_menu">
+                    <ul class="navbar__mobile_menu_content">
+                        <li><a href="" class="navbar__mobile_menu_link">About</a></li>
+                        <li><a href="" class="navbar__mobile_menu_link">Opportunities</a></li>
+                        <li><a href="" class="navbar__mobile_menu_link">Solutions</a></li>
+                        <li><a href="" class="navbar__mobile_menu_link">Prices</a></li>
+                        <li><a href="" class="navbar__mobile_menu_link">RoadMap</a></li>
+                        <li><a href="" class="navbar__mobile_menu_link">Team</a></li>
+                        <li><a href="" class="navbar__mobile_menu_link">Contact us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+            <div class="login">
+                <img src="images/login.svg" alt="" class="login__img">
+
+                <img src="./images/decor/bloggersDec1.svg" alt="forgot decor" class="forgotDec1">
+                <img src="./images/decor/forgotDec2.svg" alt="forgot decor" class="forgotDec2">
+                <img src="./images/decor/decor1.svg" alt="forgot decor" class="forgotDec3">
+                <img src="./images/decor/decor6.svg" alt="forgot decor" class="forgotDec4">
+                <div class="login__form">
+                    <div class="login__form_btns">
+                        <button type="button" class="login__form_btns_btn" id="default" onclick="table('login', this)">Log in</button>
+                        <button type="button" class="login__form_btns_btn" onclick="table('register', this)">Sign up</button>
+                    </div>
+                    <form action="">
+                        <div class="login__form_content" id="login">
+                            <label for="" class="login__form_inp">
+                                <input type="text" placeholder="Email">
+                                <img src="images/icons/fluentMailRegular2.svg" alt="fluent mail icon" class="icon">
+                            </label>
+                            <label for="" class="login__form_inp">
+                                <input type="text" placeholder="Password">
+                                <img src="images/icons/akarEye.svg" alt="akar icons" class="icon">
+                            </label>
+                            <label for="robot" class="login__form_check">
+                                <input type="checkbox" name="robot" id="robot">
+                                <span class="icon">
+                                    <span class="active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.9727 0.916493C22.7524 0.773516 22.5061 0.675342 22.2479 0.62758C21.9896 0.579817 21.7245 0.583402 21.4676 0.63813C21.2108 0.692858 20.9672 0.797657 20.7509 0.946538C20.5345 1.09542 20.3496 1.28547 20.2067 1.50583L9.00006 18.7798L3.53473 13.7265C3.34191 13.5482 3.11585 13.4096 2.86948 13.3187C2.6231 13.2278 2.36123 13.1863 2.09881 13.1965C1.56883 13.2173 1.06881 13.4477 0.70873 13.8372C0.348654 14.2266 0.158025 14.7431 0.178779 15.2731C0.199533 15.8031 0.42997 16.3031 0.819396 16.6632L7.9954 23.2978C7.9954 23.2978 8.2014 23.4752 8.29673 23.5372C8.51705 23.6802 8.76341 23.7785 9.02173 23.8263C9.28004 23.8741 9.54525 23.8706 9.80219 23.8158C10.0591 23.7611 10.3028 23.6563 10.5192 23.5073C10.7356 23.3584 10.9205 23.1683 11.0634 22.9478L23.5621 3.68249C23.705 3.4622 23.8032 3.21589 23.851 2.95764C23.8987 2.69939 23.8952 2.43426 23.8404 2.1774C23.7857 1.92054 23.6809 1.67698 23.532 1.46063C23.3831 1.24428 23.1931 1.05938 22.9727 0.916493Z" fill="#FFB443"/>
+                                        </svg>
+                                    </span>
+                                    <span class="noactive">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="#E52440"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                I am not a robot
+                            </label>
+                            <button type="button" class="login__form_btn">Get started</button>
+                        </div>
+                    </form>
+                    <form action="">
+                        <div class="login__form_content" id="register">
+                            <label for="" class="login__form_inp">
+                                <input type="text" placeholder="Email">
+                                <img src="images/icons/contactMail.svg" alt="contact icon" class="icon">
+                            </label>
+                            <label for="" class="login__form_inp">
+                                <input type="text" placeholder="Password">
+                                <img src="images/icons/akarEye.svg" alt="contact icon" class="icon">
+                            </label>
+                            <label for="" class="login__form_inp">
+                                <input type="text" placeholder="Confirm Password">
+                                <img src="images/icons/akarEye.svg" alt="contact icon" class="icon">
+                            </label>
+                            <label for="" class="login__form_inp">
+                                <input type="text" placeholder="Telegram tag">
+                                <img src="images/icons/contactPerson.svg" alt="contact icon" class="icon">
+                            </label>
+                            <label for="robot2" class="login__form_check">
+                                <input type="checkbox" name="robot2" id="robot2" required>
+                                <span class="icon">
+                                    <span class="active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.9727 0.916493C22.7524 0.773516 22.5061 0.675342 22.2479 0.62758C21.9896 0.579817 21.7245 0.583402 21.4676 0.63813C21.2108 0.692858 20.9672 0.797657 20.7509 0.946538C20.5345 1.09542 20.3496 1.28547 20.2067 1.50583L9.00006 18.7798L3.53473 13.7265C3.34191 13.5482 3.11585 13.4096 2.86948 13.3187C2.6231 13.2278 2.36123 13.1863 2.09881 13.1965C1.56883 13.2173 1.06881 13.4477 0.70873 13.8372C0.348654 14.2266 0.158025 14.7431 0.178779 15.2731C0.199533 15.8031 0.42997 16.3031 0.819396 16.6632L7.9954 23.2978C7.9954 23.2978 8.2014 23.4752 8.29673 23.5372C8.51705 23.6802 8.76341 23.7785 9.02173 23.8263C9.28004 23.8741 9.54525 23.8706 9.80219 23.8158C10.0591 23.7611 10.3028 23.6563 10.5192 23.5073C10.7356 23.3584 10.9205 23.1683 11.0634 22.9478L23.5621 3.68249C23.705 3.4622 23.8032 3.21589 23.851 2.95764C23.8987 2.69939 23.8952 2.43426 23.8404 2.1774C23.7857 1.92054 23.6809 1.67698 23.532 1.46063C23.3831 1.24428 23.1931 1.05938 22.9727 0.916493Z" fill="#FFB443"/>
+                                        </svg>
+                                    </span>
+                                    <span class="noactive">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11.5" stroke="#E52440"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                I am not a robot
+                            </label>
+                            <button type="submit" class="login__form_btn">Get started</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logos">
+                <a href="index.html" class="footer__logos_logo">
+                    <img src="images/icons/logo.svg" alt="logo">
+                </a>
+                <div class="footer__logos_social">
+                    <a href="" class="footer__logos_social_link">
+                        <img src="images/icons/social1.svg" alt="social icon">
+                    </a>
+                    <a href="" class="footer__logos_social_link">
+                        <img src="images/icons/social2.svg" alt="social icon">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__products">
+                <h3 class="footer__products_headline">Products:</h3>
+                <ul class="footer__products_menu">
+                    <li>
+                        <a href="" class="footer__products_menu_link">Ad-Laundry analytics</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__products_menu_link">Ad-Laundry bloggers</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__products_menu_link">Ad-Laundry marketing</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__products_menu_link">Ad-Laundry mailing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__company">
+                <h3 class="footer__company_headline">Company:</h3>
+                <ul class="footer__company_menu">
+                    <li>
+                        <a href="" class="footer__company_menu_link">About us</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__company_menu_link">Our blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__created">
+                <p class="footer__created_paragraph1">TERMS OF USE</p>
+                <p class="footer__created_paragraph2">2022  © Ad-Laundry. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/login.js"></script>
+    <script src="js/notFound.js"></script>
+    <script src="js/size.js"></script>
+</body>
+</html>

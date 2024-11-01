@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main/main.css">
+    <link rel="stylesheet" href="scss/profileNavbar/profileNavbar.css">
+    <link rel="stylesheet" href="scss/aside/aside.css">
+    <link rel="stylesheet" href="scss/info/info.css">
+    <link rel="stylesheet" href="scss/footer/footer.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar__content">
+            <a href="" class="navbar__logo">
+                <img src="images/icons/logoWhite.svg" alt="logo" class="navbar__logo_img">
+            </a>
+            <div class="absolute">
+                <div class="navbar__user">
+                    <img src="images/icons/userLogo.svg" alt="user-logo" class="navbar__user_img">
+                    <h3 class="navbar__user_name">Azaza</h3>
+                    <button type="button" class="mobile-aside">Menu</button>
+                </div>
+                <p class="wtf">Plan 3 for 2 projects</p>
+                <div class="navbar__balance">
+                    <p class="navbar__balance_paragraph">
+                        <span>Your balance</span>
+                        <b>$567</b>
+                    </p>
+                    <button class="navbar__balance_btn" type="button">
+                        <span class="desctop">Top up balance</span>
+                        <span class="mobile">+</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <img src="./images/decor/bloggersDec1.svg" alt="blogger decor" class="bloggersDec1">
+        <aside class="asidebar">
+            <div class="asidebar__header">
+                <img src="images/icons/profil.svg" alt="profil logo" class="asidebar__header_img">
+                <button type="button" class="asidebar__header_btn">
+                    Exit
+                    <ul class="menu">
+                        <li><a href="" class="menu__link">Upgrade plan</a></li>
+                        <li><a href="" class="menu__link">Change password</a></li>
+                        <li><a href="" class="menu__link">Change email</a></li>
+                        <li><a href="" class="menu__link">Exit</a></li>
+                    </ul>
+                </button>
+            </div>
+            <ul class="asidebar__menu">
+                <li>
+                    <button type="button" class="asidebar__menu_btn" onclick="aside('analytics', this)">
+                        <svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 15.5H3V15.095L6.75 11.345L9.6 14.195C9.74052 14.3347 9.93061 14.4131 10.1287 14.4131C10.3269 14.4131 10.517 14.3347 10.6575 14.195L16.2825 8.57C16.3528 8.50028 16.4086 8.41733 16.4467 8.32593C16.4847 8.23454 16.5043 8.13651 16.5043 8.0375C16.5043 7.93849 16.4847 7.84046 16.4467 7.74907C16.4086 7.65767 16.3528 7.57472 16.2825 7.505C16.142 7.36531 15.9519 7.28691 15.7537 7.28691C15.5556 7.28691 15.3655 7.36531 15.225 7.505L10.125 12.605L7.2825 9.755C7.14198 9.61531 6.95189 9.53691 6.75375 9.53691C6.55561 9.53691 6.36552 9.61531 6.225 9.755L3 12.9725V9.095L6.75 5.345L8.85 7.445C8.99052 7.58469 9.18061 7.66309 9.37875 7.66309C9.57689 7.66309 9.76698 7.58469 9.9075 7.445L13.5 3.8525L15.1425 5.495C15.2837 5.63523 15.4749 5.71362 15.6739 5.71292C15.8729 5.71221 16.0635 5.63248 16.2037 5.49125C16.344 5.35002 16.4224 5.15887 16.4217 4.95985C16.421 4.76083 16.3412 4.57023 16.2 4.43L14.0175 2.2625C13.877 2.12281 13.6869 2.04441 13.4888 2.04441C13.2906 2.04441 13.1005 2.12281 12.96 2.2625L9.36 5.8625L7.2675 3.7625C7.12698 3.62281 6.93689 3.54441 6.73875 3.54441C6.54061 3.54441 6.35052 3.62281 6.21 3.7625L3 6.9725V2.75C3 2.55109 2.92098 2.36032 2.78033 2.21967C2.63968 2.07902 2.44891 2 2.25 2C2.05109 2 1.86032 2.07902 1.71967 2.21967C1.57902 2.36032 1.5 2.55109 1.5 2.75V16.25C1.5 16.4489 1.57902 16.6397 1.71967 16.7803C1.86032 16.921 2.05109 17 2.25 17H15.75C15.9489 17 16.1397 16.921 16.2803 16.7803C16.421 16.6397 16.5 16.4489 16.5 16.25C16.5 16.0511 16.421 15.8603 16.2803 15.7197C16.1397 15.579 15.9489 15.5 15.75 15.5Z" fill="white"/>
+                        </svg>
+                        Analytics
+                    </button>
+                    <ul class="asidebar__menu_sub" id="analytics">
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Comparison
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Tik-Tok
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Discord
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn" onclick="aside('blogers', this)">
+                        <svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_153_735)">
+                            <path d="M4.5 18.5C4.5 18.5 3.375 18.5 3.375 17.375C3.375 16.25 4.5 12.875 9 12.875C13.5 12.875 14.625 16.25 14.625 17.375C14.625 18.5 13.5 18.5 13.5 18.5H4.5ZM9 11.8062C9.74592 11.8062 10.4613 11.5099 10.9887 10.9825C11.5162 10.455 11.8125 9.73967 11.8125 8.99374C11.8125 8.24782 11.5162 7.53245 10.9887 7.00501C10.4613 6.47756 9.74592 6.18124 9 6.18124C8.25408 6.18124 7.53871 6.47756 7.01126 7.00501C6.48382 7.53245 6.1875 8.24782 6.1875 8.99374C6.1875 9.73967 6.48382 10.455 7.01126 10.9825C7.53871 11.5099 8.25408 11.8062 9 11.8062Z" fill="#981921"/>
+                            <path d="M2.25 1.625C1.65326 1.625 1.08097 1.86205 0.65901 2.28401C0.237053 2.70597 0 3.27826 0 3.875L0 14.5625C0 15.0101 0.17779 15.4393 0.494257 15.7557C0.810725 16.0722 1.23995 16.25 1.6875 16.25H2.42213C2.65735 15.4233 3.0662 14.6562 3.62138 14H1.125V3.875C1.125 3.57663 1.24353 3.29048 1.4545 3.0795C1.66548 2.86853 1.95163 2.75 2.25 2.75H15.75C16.0484 2.75 16.3345 2.86853 16.5455 3.0795C16.7565 3.29048 16.875 3.57663 16.875 3.875V14H14.3786C15.0019 14.7358 15.3799 15.5446 15.5779 16.25H16.3125C16.7601 16.25 17.1893 16.0722 17.5057 15.7557C17.8222 15.4393 18 15.0101 18 14.5625V3.875C18 3.27826 17.7629 2.70597 17.341 2.28401C16.919 1.86205 16.3467 1.625 15.75 1.625H2.25Z" fill="#981921"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_153_735">
+                            <rect width="18" height="18" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        Pick Bloggers
+                    </button>
+                    <ul class="asidebar__menu_sub" id="blogers">
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Tik-Tok
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="asidebar__menu_sub_link">
+                                <img src="images/icons/circle.svg" alt="circle logo">
+                                Discord
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.091 2.82649C8.46225 2.07424 9.5355 2.07424 9.90675 2.82649L11.6753 6.40999L15.63 6.98449C16.4602 7.10449 16.7917 8.12599 16.191 8.71174L13.329 11.501L14.0048 15.4385C14.1473 16.2665 13.2788 16.8972 12.5355 16.5065L9.5685 14.9465C9.67425 14.5707 9.73575 14.1762 9.7485 13.7697L12.8573 15.4047L12.2108 11.6322C12.1831 11.4706 12.1951 11.3046 12.2458 11.1486C12.2965 10.9926 12.3843 10.8513 12.5018 10.7367L15.2423 8.06524L11.4548 7.51474C11.2923 7.49104 11.1381 7.42821 11.0053 7.33165C10.8726 7.2351 10.7653 7.10772 10.6927 6.96049L8.9985 3.52999L7.305 6.96049C7.23243 7.10772 7.12515 7.2351 6.9924 7.33165C6.85966 7.42821 6.70543 7.49104 6.543 7.51474L2.7555 8.06524L3.624 8.91199C3.22669 9.01711 2.84437 9.17235 2.48625 9.37399L1.80675 8.71174C1.206 8.12599 1.5375 7.10524 2.36775 6.98449L6.3225 6.40999L8.091 2.82649ZM9 13.625C9 14.1667 8.8933 14.7031 8.686 15.2036C8.4787 15.704 8.17486 16.1588 7.79182 16.5418C7.40877 16.9248 6.95404 17.2287 6.45357 17.436C5.9531 17.6433 5.4167 17.75 4.875 17.75C4.3333 17.75 3.7969 17.6433 3.29643 17.436C2.79596 17.2287 2.34123 16.9248 1.95818 16.5418C1.57514 16.1588 1.2713 15.704 1.064 15.2036C0.856696 14.7031 0.75 14.1667 0.75 13.625C0.75 12.531 1.1846 11.4818 1.95818 10.7082C2.73177 9.93458 3.78098 9.49999 4.875 9.49999C5.96902 9.49999 7.01823 9.93458 7.79182 10.7082C8.5654 11.4818 9 12.531 9 13.625ZM2.625 13.25C2.52554 13.25 2.43016 13.2895 2.35984 13.3598C2.28951 13.4301 2.25 13.5255 2.25 13.625C2.25 13.7244 2.28951 13.8198 2.35984 13.8902C2.43016 13.9605 2.52554 14 2.625 14H6.21975L4.9845 15.2345C4.91418 15.3049 4.87472 15.4004 4.87479 15.4999C4.87486 15.5994 4.91446 15.6948 4.98488 15.7651C5.05529 15.8354 5.15075 15.8749 5.25027 15.8748C5.34978 15.8747 5.44518 15.8352 5.5155 15.7647L7.3905 13.8897C7.4608 13.8194 7.50029 13.724 7.50029 13.6246C7.50029 13.5252 7.4608 13.4298 7.3905 13.3595L5.5155 11.4845C5.44518 11.4141 5.34978 11.3745 5.25027 11.3744C5.15075 11.3743 5.05529 11.4138 4.98488 11.4841C4.91446 11.5544 4.87486 11.6498 4.87479 11.7493C4.87472 11.8489 4.91418 11.9443 4.9845 12.0147L6.21975 13.25H2.625Z" fill="#981921"/>
+                        </svg>
+                        Start new campaign
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_153_744)">
+                            <path d="M17.8764 3.7023C17.8249 3.62834 17.7592 3.56526 17.6833 3.51666C17.6074 3.46806 17.5226 3.4349 17.4339 3.41908C17.3451 3.40325 17.2541 3.40506 17.1661 3.42441C17.078 3.44377 16.9946 3.48028 16.9207 3.53186L0.122211 15.2971C0.245398 15.4732 0.450711 15.5902 0.681898 15.5902H17.3167C17.6947 15.5902 17.999 15.2825 17.999 14.9045V4.0848C17.995 3.94803 17.9523 3.8152 17.8758 3.70174L17.8764 3.7023ZM1.0779 3.53243C0.975667 3.46109 0.855936 3.41895 0.731563 3.41053C0.60719 3.40211 0.482873 3.42773 0.37196 3.48463C0.261047 3.54154 0.167728 3.62757 0.102024 3.73351C0.0363193 3.83945 0.000711404 3.96128 -0.000976562 4.08593V14.9225L7.99721 8.3688L1.0779 3.53243Z" fill="#981921"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_153_744">
+                            <rect width="18" height="18" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        My campaigns
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.952 2.375L16.125 6.55025V12.4528L11.952 16.625H6.0495L1.875 12.452V6.5495L6.0495 2.375H11.952ZM11.3302 3.875H6.6705L3.37575 7.17125V11.831L6.6705 15.1265H11.3302L14.6257 11.831V7.1705L11.3302 3.87575V3.875ZM8.25 11.75H9.75V13.25H8.25V11.75ZM8.25 5.75H9.75V10.25H8.25V5.75Z" fill="#981921"/>
+                        </svg>
+                        Spam
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 2C4.86 2 1.5 5.36 1.5 9.5C1.5 13.64 4.86 17 9 17C13.14 17 16.5 13.64 16.5 9.5C16.5 5.36 13.14 2 9 2ZM9 15.5C5.685 15.5 3 12.815 3 9.5C3 6.185 5.685 3.5 9 3.5C12.315 3.5 15 6.185 15 9.5C15 12.815 12.315 15.5 9 15.5Z" fill="#981921"/>
+                            <path d="M5.3252 8.135C5.52296 8.56553 5.62536 9.03371 5.62536 9.5075C5.62536 9.98128 5.52296 10.4495 5.3252 10.88L6.3527 11.345C6.6302 10.7375 6.7652 10.1075 6.7577 9.47C6.7502 8.84 6.6152 8.2325 6.3527 7.67L5.3252 8.135ZM9.99769 5.9975C10.5827 7.175 10.8827 8.3525 10.8827 9.4775C10.8827 10.61 10.5827 11.795 9.99769 12.995L11.0102 13.49C11.6702 12.1325 12.0077 10.7825 12.0077 9.4775C12.0077 8.1725 11.6702 6.83 11.0102 5.495L9.99769 5.9975ZM7.6502 7.04C8.04769 7.8425 8.2502 8.69749 8.2502 9.59C8.2502 10.4675 8.0552 11.2625 7.6652 11.9525L8.6402 12.5075C9.1277 11.645 9.3752 10.67 9.3752 9.59C9.3752 8.525 9.1352 7.4975 8.65519 6.5375L7.6502 7.04Z" fill="#981921"/>
+                        </svg>
+                        Contact us
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8125 14H6.1875C5.88913 14 5.60298 14.1185 5.39201 14.3295C5.18103 14.5405 5.0625 14.8266 5.0625 15.125V16.25C5.0625 16.5484 5.18103 16.8345 5.39201 17.0455C5.60298 17.2565 5.88913 17.375 6.1875 17.375H11.8125C12.1109 17.375 12.397 17.2565 12.608 17.0455C12.819 16.8345 12.9375 16.5484 12.9375 16.25V15.125C12.9375 14.8266 12.819 14.5405 12.608 14.3295C12.397 14.1185 12.1109 14 11.8125 14ZM11.8125 16.25H6.1875V15.125H11.8125V16.25Z" fill="#981921"/>
+                            <path d="M16.1476 8.53981L9.39757 1.78981C9.29208 1.68436 9.14904 1.62512 8.99988 1.62512C8.85073 1.62512 8.70768 1.68436 8.60219 1.78981L1.85219 8.53981C1.77355 8.61848 1.72 8.7187 1.6983 8.8278C1.67661 8.9369 1.68775 9.04998 1.73031 9.15274C1.77288 9.25551 1.84495 9.34336 1.93743 9.40517C2.02992 9.46698 2.13865 9.49998 2.24988 9.5H5.06238V11.75C5.06268 12.0483 5.1813 12.3343 5.39221 12.5452C5.60313 12.7561 5.8891 12.8747 6.18738 12.875H11.8124C12.1106 12.8746 12.3965 12.7559 12.6074 12.545C12.8183 12.3341 12.9369 12.0482 12.9374 11.75V9.5H15.7499C15.8611 9.49998 15.9698 9.46698 16.0623 9.40517C16.1548 9.34336 16.2269 9.25551 16.2694 9.15274C16.312 9.04998 16.3232 8.9369 16.3015 8.8278C16.2798 8.7187 16.2262 8.61848 16.1476 8.53981ZM11.8124 8.375V11.75H6.18738V8.375H3.60776L8.99988 2.98288L14.392 8.375H11.8124Z" fill="#981921"/>
+                        </svg>
+                        Upgrade plan
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="asidebar__menu_btn">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_153_753)">
+                            <path d="M8.25 18.1925V15.4925C4.4925 15.2975 1.5 12.1775 1.5 8.375C1.5 4.445 4.695 1.25 8.625 1.25C12.555 1.25 15.75 4.445 15.75 8.375C15.75 12.0875 13.17 15.8225 9.3225 17.675L8.25 18.1925ZM8.625 2.75C5.52 2.75 3 5.27 3 8.375C3 11.48 5.52 14 8.625 14H9.75V15.725C12.48 14 14.25 11.165 14.25 8.375C14.25 5.27 11.73 2.75 8.625 2.75ZM7.875 11.375H9.375V12.875H7.875V11.375ZM9.375 10.25H7.875C7.875 7.8125 10.125 8 10.125 6.5C10.125 5.675 9.45 5 8.625 5C7.8 5 7.125 5.675 7.125 6.5H5.625C5.625 4.8425 6.9675 3.5 8.625 3.5C10.2825 3.5 11.625 4.8425 11.625 6.5C11.625 8.375 9.375 8.5625 9.375 10.25Z" fill="#981921"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_153_753">
+                            <rect width="18" height="18" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        How to use
+                    </button>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="info">
+            <div class="info__social">
+                <a href="" class="info__social_link">
+                    <img src="images/icons/share.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/tvit.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/youtube.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/biTiktok.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/tel2.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/insta.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/facebook.svg" alt="social logo" class="info__social_link_img">
+                </a>
+                <a href="" class="info__social_link">
+                    <img src="images/icons/discord.svg" alt="social logo" class="info__social_link_img">
+                </a>
+            </div>
+            <div class="info__triggers">
+                <div class="info__triggers_item telegram2">
+                    <div class="info__triggers_item_header telegram2">
+                        <a href="" class="info__triggers_item_header_headline">
+                            No comments
+                        </a>
+                        <img src="images/icons/octiconProject.svg" alt="info icon" class="info__triggers_item_header_img">
+                    </div>
+                    <p class="info__triggers_item_paragraph">Chat name</p>
+                </div>
+                <div class="info__triggers_item telegram2">
+                    <div class="info__triggers_item_header">
+                        <h3 class="info__triggers_item_header_headline">546</h3>
+                        <img src="images/icons/cilStar.svg" alt="info icon" class="info__triggers_item_header_img">
+                    </div>
+                    <p class="info__triggers_item_paragraph">Total messages <br> per last 30 days </p>
+                </div>
+                <div class="info__triggers_item telegram2">
+                    <div class="info__triggers_item_header">
+                        <h3 class="info__triggers_item_header_headline">23</h3>
+                        <img src="images/icons/akarPerson.svg" alt="info icon" class="info__triggers_item_header_img">
+                    </div>
+                    <p class="info__triggers_item_paragraph">Active people</p>
+                </div>
+                <div class="info__triggers_item telegram2">
+                    <div class="info__triggers_item_header">
+                        <h3 class="info__triggers_item_header_headline">56</h3>
+                        <img src="images/icons/akarVideo.svg" alt="info icon" class="info__triggers_item_header_img">
+                    </div>
+                    <p class="info__triggers_item_paragraph">New members/ <br> left members</p>
+                </div>
+            </div>
+            <div class="info__table telegram2">
+                <div class="info__table_header">
+                    <h3 class="info__table_header_headline">Telegram Chat</h3>
+                    <p class="info__table_header_completed">
+                        <img src="images/icons/Subtract.svg" alt="Subtract logo">
+                        5/100
+                    </p>
+                </div>
+                <div class="scroll">
+                    <table> 
+                        <tr>
+                            <th>Date</th>
+                            <th>Messages</th>
+                            <th>Active users</th>
+                            <th>Members left channel</th>
+                            <th>New users </th>
+                            <th>Platform rank</th>
+                        </tr>
+                        <tr>
+                            <td>2022.01.04</td>
+                            <td>4356 тыс</td>
+                            <td>788, 684</td>
+                            <td>120,7645</td>
+                            <td>25,76</td>
+                            <td>Вскоре</td>
+                        </tr>
+                        <tr>
+                            <td>2022.01.04</td>
+                            <td>4356 тыс</td>
+                            <td>788, 684</td>
+                            <td>120,7645</td>
+                            <td>25,76</td>
+                            <td>Вскоре</td>
+                        </tr>
+                        <tr>
+                            <td>2022.01.04</td>
+                            <td>4356 тыс</td>
+                            <td>788, 684</td>
+                            <td>120,7645</td>
+                            <td>25,76</td>
+                            <td>Вскоре</td>
+                        </tr>
+                        <tr>
+                            <td>2022.01.04</td>
+                            <td>4356 тыс</td>
+                            <td>788, 684</td>
+                            <td>120,7645</td>
+                            <td>25,76</td>
+                            <td>Вскоре</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="info__pagination">
+                <a href="" class="info__pagination_btn">1</a>
+                <a href="" class="info__pagination_btn">2</a>
+                <a href="" class="info__pagination_btn">3</a>
+                <a href="" class="info__pagination_dots">...</a>
+                <a href="" class="info__pagination_btn">78</a>
+            </div>
+            <div class="info__diagramm">
+                <div class="info__diagramm_header">
+                    <p class="info__diagramm_header_paragraph">
+                        Regions
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.0001C13.1421 17.0001 16.5 13.6422 16.5 9.50007C16.5 5.35794 13.1421 2.00007 9 2.00007C4.85786 2.00007 1.5 5.35794 1.5 9.50007C1.5 13.6422 4.85786 17.0001 9 17.0001Z" stroke="#D0D1D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 6.50007V9.50007" stroke="#D0D1D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="12.5" r="0.75" fill="#D0D1D2"/>
+                        </svg>
+                    </p>
+                    <div class="info__diagramm_header_btns">
+                        <button type="button" class="info__diagramm_header_btns_btn" id="defD" onclick="diagrammTab('day', this)">day</button>
+                        <button type="button" class="info__diagramm_header_btns_btn" onclick="diagrammTab('week', this)">week</button>
+                        <button type="button" class="info__diagramm_header_btns_btn" onclick="diagrammTab('month', this)">month</button>
+                        <div class="info__diagramm_header_btns_date">
+                            <input type="date">
+                            <span class="icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 3.5C1.75 2.85567 2.27233 2.33333 2.91667 2.33333H11.0833C11.7277 2.33333 12.25 2.85567 12.25 3.5V11.6667C12.25 12.311 11.7277 12.8333 11.0833 12.8333H2.91667C2.27233 12.8333 1.75 12.311 1.75 11.6667V3.5Z" stroke="#E52440" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.33301 1.16667V3.5" stroke="#E52440" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.66699 1.16667V3.5" stroke="#E52440" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1.75 5.83333H12.25" stroke="#E52440" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__diagramm_statistic" id="day">
+                    <div class="positionX">
+                        <span class="txt">
+                            <span class="num">100 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">75 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">50 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">25 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">0</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="diagramm__cols">
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">85.032</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">70.432</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">99.234</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">25.847</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">64.789</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">42.765</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">89.654</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">74.987</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">27.546</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">80.176</p>
+                        </div>
+                        <p class="diagramm__cols_name">EUROPE</p>
+                        <p class="diagramm__cols_name">UAE</p>
+                        <p class="diagramm__cols_name">Korea</p>
+                        <p class="diagramm__cols_name">Japan</p>
+                        <p class="diagramm__cols_name">Africa</p>
+                        <p class="diagramm__cols_name">EUROPE</p>
+                        <p class="diagramm__cols_name">Mexico</p>
+                        <p class="diagramm__cols_name">Russia</p>
+                        <p class="diagramm__cols_name">CHINA</p>
+                        <p class="diagramm__cols_name">USA</p>
+                    </div>
+                </div>
+                <div class="info__diagramm_statistic" id="week">
+                    <div class="positionX">
+                        <span class="txt">
+                            <span class="num">100 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">75 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">50 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">25 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">0</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="diagramm__cols">
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">85.032</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">70.432</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">99.234</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">25.847</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">64.789</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">42.765</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">89.654</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">74.987</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">27.546</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">80.176</p>
+                        </div>
+                        <p class="diagramm__cols_name">EUROPE</p>
+                        <p class="diagramm__cols_name">UAE</p>
+                        <p class="diagramm__cols_name">Korea</p>
+                        <p class="diagramm__cols_name">Japan</p>
+                        <p class="diagramm__cols_name">Africa</p>
+                        <p class="diagramm__cols_name">EUROPE</p>
+                        <p class="diagramm__cols_name">Mexico</p>
+                        <p class="diagramm__cols_name">Russia</p>
+                        <p class="diagramm__cols_name">CHINA</p>
+                        <p class="diagramm__cols_name">USA</p>
+                    </div>
+                </div>
+                <div class="info__diagramm_statistic" id="month">
+                    <div class="positionX">
+                        <span class="txt">
+                            <span class="num">100 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">75 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">50 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">25 M</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="txt">
+                            <span class="num">0</span>
+                            <span class="line">
+                                <svg width="767" height="1" viewBox="0 0 767 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="766.538" y2="0.5" stroke="#E0E0E0" stroke-dasharray="8 8"/>
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="diagramm__cols">
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">85.032</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">70.432</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">99.234</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">25.847</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">64.789</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">42.765</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">89.654</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">74.987</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">27.546</p>
+                        </div>
+                        <div class="diagramm__cols_col">
+                            <p class="diagramm__cols_col_paragraph">80.176</p>
+                        </div>
+                        <p class="diagramm__cols_name">EUROPE</p>
+                        <p class="diagramm__cols_name">UAE</p>
+                        <p class="diagramm__cols_name">Korea</p>
+                        <p class="diagramm__cols_name">Japan</p>
+                        <p class="diagramm__cols_name">Africa</p>
+                        <p class="diagramm__cols_name">EUROPE</p>
+                        <p class="diagramm__cols_name">Mexico</p>
+                        <p class="diagramm__cols_name">Russia</p>
+                        <p class="diagramm__cols_name">CHINA</p>
+                        <p class="diagramm__cols_name">USA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__social">
+                <a href="" class="footer__social_link">
+                    <svg width="80" height="63" viewBox="0 0 80 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1818_9466)">
+                        <rect x="16" y="4" width="48" height="48" rx="24" fill="#E52440"/>
+                        </g>
+                        <path d="M43.1159 19.4913V19.4873H44.146L44.5223 19.5628C44.7732 19.6118 45.001 19.676 45.2057 19.7555C45.4104 19.835 45.6085 19.9277 45.8 20.0336C45.9915 20.1396 46.1652 20.2475 46.321 20.3575C46.4755 20.4661 46.6142 20.5813 46.737 20.7031C46.8585 20.8263 47.048 20.8581 47.3055 20.7985C47.563 20.7389 47.8403 20.6561 48.1375 20.5502C48.4346 20.4442 48.7284 20.325 49.0189 20.1926C49.3095 20.0601 49.4865 19.976 49.5498 19.9403C49.6119 19.9032 49.6449 19.8833 49.6489 19.8807L49.6528 19.8747L49.6726 19.8648L49.6925 19.8548L49.7123 19.8449L49.7321 19.835L49.736 19.829L49.742 19.825L49.7479 19.8211L49.7519 19.8151L49.7717 19.8091L49.7915 19.8052L49.7876 19.835L49.7816 19.8648L49.7717 19.8946L49.7618 19.9244L49.7519 19.9442L49.742 19.9641L49.7321 19.9939C49.7255 20.0138 49.7189 20.0403 49.7123 20.0734C49.7057 20.1065 49.6429 20.2389 49.5241 20.4707C49.4052 20.7025 49.2567 20.9376 49.0784 21.176C48.9001 21.4144 48.7403 21.5945 48.599 21.7163C48.4564 21.8395 48.362 21.9256 48.3157 21.9746C48.2695 22.0249 48.2134 22.0713 48.1474 22.1137L48.0483 22.1792L48.0285 22.1892L48.0087 22.1991L48.0048 22.2051L47.9988 22.209L47.9928 22.213L47.9889 22.219L47.9691 22.2289L47.9493 22.2388L47.9453 22.2448L47.9394 22.2488L47.9334 22.2528L47.9295 22.2587L47.9255 22.2647L47.9196 22.2686L47.9136 22.2726L47.9097 22.2786H48.0087L48.5633 22.1594C48.9331 22.0799 49.2864 21.9839 49.6231 21.8713L50.158 21.6925L50.2174 21.6726L50.2471 21.6627L50.2669 21.6528L50.2867 21.6428L50.3065 21.6329L50.3263 21.623L50.366 21.617L50.4056 21.613V21.6528L50.3957 21.6567L50.3858 21.6627L50.3818 21.6687L50.3759 21.6726L50.3699 21.6766L50.366 21.6826L50.362 21.6885L50.356 21.6925L50.3501 21.6965L50.3461 21.7024L50.3422 21.7084L50.3362 21.7124L50.3263 21.7322L50.3164 21.7521L50.3105 21.7561C50.3079 21.7601 50.224 21.8726 50.0589 22.0938C49.8938 22.3163 49.8047 22.4289 49.7915 22.4316C49.7783 22.4355 49.7598 22.4554 49.736 22.4912C49.7136 22.5282 49.5736 22.6759 49.3161 22.9342C49.0586 23.1924 48.8064 23.4222 48.5594 23.6236C48.3111 23.8262 48.1857 24.0752 48.183 24.3705C48.1791 24.6646 48.1639 24.997 48.1375 25.3679C48.111 25.7387 48.0615 26.1393 47.9889 26.5698C47.9163 27.0002 47.804 27.487 47.6521 28.03C47.5003 28.573 47.3154 29.1028 47.0975 29.6193C46.8796 30.1359 46.6518 30.5994 46.4141 31.01C46.1764 31.4206 45.9585 31.7683 45.7604 32.053C45.5623 32.3377 45.3609 32.606 45.1562 32.8576C44.9515 33.1093 44.6927 33.3927 44.3797 33.7079C44.0654 34.0218 43.8938 34.194 43.8647 34.2244C43.8343 34.2536 43.7049 34.3622 43.4764 34.5502C43.2493 34.7396 43.005 34.929 42.7435 35.1184C42.4833 35.3065 42.2443 35.4635 42.0264 35.5893C41.8085 35.7151 41.5457 35.8588 41.238 36.0204C40.9316 36.1833 40.6002 36.3343 40.2436 36.4733C39.887 36.6124 39.5107 36.7415 39.1145 36.8607C38.7183 36.9799 38.3354 37.0727 37.9656 37.1389C37.5958 37.2051 37.1765 37.2614 36.7077 37.3077L36.0045 37.3773V37.3872H34.7169V37.3773L34.5485 37.3673C34.4363 37.3607 34.3439 37.3541 34.2712 37.3475C34.1986 37.3409 33.9246 37.3044 33.4492 37.2382C32.9737 37.172 32.6007 37.1058 32.3299 37.0395C32.0592 36.9733 31.6564 36.8475 31.1216 36.6621C30.5868 36.4767 30.1292 36.2892 29.7488 36.0998C29.3698 35.9118 29.1321 35.7926 29.0357 35.7422C28.9406 35.6932 28.8337 35.6323 28.7148 35.5595L28.5365 35.4502L28.5326 35.4442L28.5266 35.4403L28.5207 35.4363L28.5167 35.4303L28.4969 35.4204L28.4771 35.4105L28.4732 35.4045L28.4672 35.4005L28.4613 35.3966L28.4573 35.3906L28.4534 35.3846L28.4474 35.3807H28.4375V35.3409L28.4573 35.3449L28.4771 35.3509L28.5663 35.3608C28.6257 35.3674 28.7875 35.3774 29.0516 35.3906C29.3157 35.4039 29.5963 35.4039 29.8935 35.3906C30.1906 35.3774 30.4943 35.3476 30.8047 35.3012C31.115 35.2549 31.4815 35.1754 31.9041 35.0628C32.3267 34.9502 32.7149 34.8165 33.0688 34.6615C33.4214 34.5052 33.6723 34.3887 33.8216 34.3118C33.9695 34.2364 34.1953 34.096 34.499 33.8907L34.9546 33.5827L34.9586 33.5768L34.9645 33.5728L34.9705 33.5688L34.9744 33.5629L34.9784 33.5569L34.9843 33.5529L34.9903 33.549L34.9942 33.543L35.0141 33.537L35.0339 33.5331L35.0378 33.5132L35.0438 33.4933L35.0497 33.4894L35.0537 33.4834L34.8952 33.4735C34.7896 33.4669 34.6872 33.4602 34.5882 33.4536C34.4891 33.447 34.334 33.4172 34.1227 33.3642C33.9114 33.3112 33.6836 33.2318 33.4392 33.1258C33.1949 33.0199 32.9572 32.894 32.7261 32.7483C32.495 32.6027 32.328 32.4814 32.225 32.3848C32.1233 32.2894 31.9912 32.1543 31.8288 31.9795C31.6677 31.8034 31.5277 31.6225 31.4088 31.4371C31.29 31.2517 31.1764 31.0378 31.0681 30.7954L30.9037 30.4339L30.8938 30.4041L30.8839 30.3743L30.878 30.3544L30.874 30.3345L30.9037 30.3385L30.9334 30.3445L31.1513 30.3743C31.2966 30.3941 31.5244 30.4007 31.8347 30.3941C32.1451 30.3875 32.3597 30.3743 32.4785 30.3544C32.5974 30.3345 32.67 30.3213 32.6964 30.3147L32.736 30.3047L32.7856 30.2948L32.8351 30.2849L32.839 30.2789L32.845 30.2749L32.8509 30.271L32.8549 30.265L32.8153 30.2551L32.7756 30.2451L32.736 30.2352L32.6964 30.2253L32.6568 30.2153C32.6304 30.2087 32.5842 30.1955 32.5181 30.1756C32.4521 30.1557 32.2738 30.0829 31.9833 29.9571C31.6928 29.8312 31.4617 29.7087 31.29 29.5895C31.1179 29.47 30.9538 29.3392 30.7987 29.1982C30.6442 29.0551 30.4745 28.871 30.2896 28.6459C30.1048 28.4207 29.9397 28.1591 29.7944 27.8611C29.6492 27.5631 29.5402 27.2784 29.4676 27.0069C29.3952 26.7369 29.3475 26.461 29.325 26.1824L29.2893 25.7652L29.3091 25.7692L29.3289 25.7751L29.3487 25.7851L29.3685 25.795L29.3883 25.8049L29.4081 25.8149L29.7152 25.9539C29.9199 26.0466 30.1741 26.1261 30.4778 26.1923C30.7816 26.2585 30.9631 26.295 31.0226 26.3016L31.1117 26.3115H31.29L31.286 26.3056L31.2801 26.3016L31.2741 26.2976L31.2702 26.2917L31.2662 26.2857L31.2603 26.2817L31.2543 26.2777L31.2504 26.2718L31.2306 26.2619L31.2107 26.2519L31.2068 26.246L31.2008 26.242L31.1949 26.238L31.1909 26.2321L31.1711 26.2221L31.1513 26.2122L31.1474 26.2062C31.1434 26.2036 31.0866 26.1612 30.977 26.0791C30.8687 25.9956 30.7551 25.8877 30.6363 25.7553C30.5174 25.6228 30.3986 25.4837 30.2797 25.3381C30.1607 25.192 30.0546 25.0358 29.9628 24.8712C29.8704 24.7056 29.7726 24.495 29.6696 24.2394C29.5679 23.9851 29.4907 23.7288 29.4378 23.4706C29.385 23.2123 29.3553 22.9574 29.3487 22.7057C29.3421 22.4541 29.3487 22.2388 29.3685 22.06C29.3883 21.8812 29.4279 21.6793 29.4874 21.4541C29.5468 21.229 29.6327 20.9906 29.7449 20.7389L29.9133 20.3614L29.9232 20.3316L29.9331 20.3018L29.939 20.2979L29.943 20.2919L29.9469 20.2859L29.9529 20.282L29.9588 20.2859L29.9628 20.2919L29.9667 20.2979L29.9727 20.3018L29.9787 20.3058L29.9826 20.3118L29.9866 20.3177L29.9925 20.3217L30.0024 20.3416L30.0123 20.3614L30.0183 20.3654L30.0222 20.3714L30.2896 20.6694C30.4679 20.868 30.6792 21.0899 30.9235 21.3349C31.1678 21.5799 31.3032 21.7071 31.3296 21.7163C31.356 21.7269 31.389 21.7574 31.4286 21.8077C31.4683 21.8567 31.6003 21.974 31.8248 22.1594C32.0493 22.3448 32.3432 22.56 32.7063 22.805C33.0695 23.0501 33.4723 23.2918 33.9147 23.5302C34.3571 23.7686 34.8325 23.9838 35.3409 24.1758C35.8493 24.3679 36.2059 24.4937 36.4106 24.5533C36.6153 24.6129 36.9652 24.6891 37.4605 24.7818C37.9557 24.8745 38.3288 24.9341 38.5797 24.9606C38.8306 24.9871 39.0023 25.0023 39.0947 25.0063L39.2334 25.0103L39.2294 24.9805L39.2234 24.9507L39.1838 24.7023C39.1574 24.5368 39.1442 24.305 39.1442 24.007C39.1442 23.709 39.1673 23.4342 39.2135 23.1825C39.2598 22.9309 39.3291 22.6759 39.4215 22.4176C39.514 22.1594 39.6045 21.9521 39.6929 21.7958C39.7827 21.6409 39.9003 21.464 40.0455 21.2654C40.1908 21.0667 40.379 20.8614 40.6101 20.6495C40.8412 20.4376 41.1053 20.2489 41.4024 20.0833C41.6996 19.9178 41.9736 19.7919 42.2245 19.7058C42.4754 19.6198 42.6867 19.5635 42.8584 19.537C43.0301 19.5105 43.1159 19.4953 43.1159 19.4913Z" fill="white"/>
+                        <defs>
+                        <filter id="filter0_d_1818_9466" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="12"/>
+                        <feGaussianBlur stdDeviation="8"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.596078 0 0 0 0 0.0980392 0 0 0 0 0.129412 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1818_9466"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1818_9466" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="" class="footer__social_link">
+                    <svg width="80" height="63" viewBox="0 0 80 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1818_9469)">
+                        <rect x="16" y="4" width="48" height="48" rx="24" fill="#E52440"/>
+                        </g>
+                        <path d="M46.6318 19.8719L28.163 26.9937C26.9026 27.5 26.9099 28.2031 27.9318 28.5167L32.6734 29.9958L43.6442 23.074C44.163 22.7583 44.637 22.9281 44.2474 23.274L35.3588 31.2958H35.3568L35.3588 31.2969L35.0318 36.1844C35.5109 36.1844 35.7224 35.9646 35.9911 35.7052L38.2942 33.4656L43.0849 37.0042C43.9682 37.4906 44.6026 37.2406 44.8224 36.1865L47.9672 21.3656C48.289 20.075 47.4745 19.4906 46.6318 19.8719Z" fill="white"/>
+                        <defs>
+                        <filter id="filter0_d_1818_9469" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="12"/>
+                        <feGaussianBlur stdDeviation="8"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.596078 0 0 0 0 0.0980392 0 0 0 0 0.129412 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1818_9469"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1818_9469" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="" class="footer__links_link">CONTACT US</a>
+                <a href="" class="footer__links_link">REPORT A BUG</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/info.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/size.js"></script>
+
+</body>
+</html>

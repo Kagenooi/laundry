@@ -1,0 +1,267 @@
+@import '../variables/variables';
+
+.footer__content {
+    padding: 25px 15px;
+}
+
+.forgot {
+    position: relative;
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 110px 15px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+        align-items: center;
+        grid-gap: 20px;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (max-width: 580px) {
+        padding: 60px 30px;
+    }
+    @media (max-width: 480px) {
+        padding: 60px 25px 130px;
+    }
+
+    .forgotDec1,
+    .forgotDec2,
+    .forgotDec3,
+    .forgotDec4 {
+        position: absolute;
+    }
+    .forgotDec1{
+        top: 20%;
+        left: -6%;
+
+        @media (max-width: 1024px) {
+            width: 40px;
+            top: 18%;
+            left: 3%;
+        }
+        @media (max-width: 500px) {
+            top: 10%;
+        }
+    }
+    .forgotDec2 {
+        top: 17%;
+        left: 45%;
+
+        @media (max-width: 1024px) {
+            width: 50px;
+            left: 40%;
+        }
+        @media (max-width: 768px) {
+            top: 11%;
+            left: 65%;
+        }
+        @media (max-width: 580px) {
+            display: none;
+        }
+    }
+    .forgotDec3 {
+        bottom: 0%;
+        left: 45%;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .forgotDec4 {
+        bottom: -8%;
+        right: 17%;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+    &__img {
+        display: block;
+        margin-left: -50px;
+
+        @media (max-width: 1024px) {
+            margin: 0;
+            width: 50%;
+        }
+        @media (max-width: 580px) {
+            width: 100%;
+        }
+    }
+    &__form {
+        width: 100%;
+        max-width: 475px;
+
+        @media (max-width: 580px) {
+            margin-bottom: 0;
+        }
+        &_links {
+            display: flex;
+            position: relative;
+            z-index: 1070;
+
+            @media (max-width: 480px) {
+                grid-gap: 10px;
+            }
+            &_link {
+                display: block;
+                width: 100%;
+                max-width: 135px;
+                background: #FFFFFF;
+                border: none;
+                border-left: 1px solid #E52440;
+                border-right: 1px solid #E52440;
+                border-top: 1px solid #E52440;
+                border-radius: 5px 5px 0px 0px;
+                padding: 10px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $lighterBlack;
+
+                @media (max-width: 480px) {
+                    max-width: 50%;
+                    padding: 6px;
+                }
+                &.active {
+                    color: #fff;
+                    background: #E52440;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        &_content {
+            box-shadow: 0px 3px 20px rgba(152, 25, 33, 0.2);
+            border-radius: 0px 5px 5px 5px;
+            padding: 30px 70px;
+            position: relative;
+            z-index: 1080;
+
+            @media (max-width: 1024px) {
+                padding: 30px;
+            }
+        }
+        &_headline {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $lighterBlack;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        &_inp {
+            position: relative;
+            margin-bottom: 20px;
+            display: block;
+
+            input {
+                display: block;
+                width: 100%;
+                padding: 10px 45px 10px 10px;
+                border: none;
+                outline: none;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: $lighterBlack;
+                border-bottom: 1px solid #FFB443;
+            }
+            .icon {
+                position: absolute;
+                top: 9.5px;
+                right: 9.5px;
+            }
+        }
+        &_img {
+            display: block;
+            margin: 0 auto;
+        }
+        &_btn {
+            display: block;
+            width: 100%;
+            max-width: 275px;
+            margin: 20px auto 0;
+            background: #E52440;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 16px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+
+            @media (max-width: 480px) {
+                position: absolute;
+                max-width: 260px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: -80px;
+                padding: 13px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+
+.footer__content {
+    position: relative;
+
+    @media (max-width: 580px) {
+        padding-bottom: 40px;
+    }
+}
+.footer__logos {
+    @media (max-width: 580px) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &_logo {
+            width: 130px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &_social {
+            &_link {
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+
+                img {
+                    width: 165%;
+                    top: -3px;
+                    left: -11px;
+                }
+            }
+        }
+    }
+}
+.footer__created {
+    @media (max-width: 580px) {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        left: 0;
+
+        .footer__created_paragraph1 {
+            display: none;
+        }
+        .footer__created_paragraph2 {
+            text-align: center;
+        }
+    }
+}

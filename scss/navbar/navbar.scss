@@ -1,0 +1,128 @@
+@import '../variables/_variables.scss';
+
+.navbar {
+    width: 100%;
+
+    @media (max-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1090;
+        background: #fff;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 25px 15px;
+
+        @media (max-width: 768px) {
+            padding: 9px 3px;
+            border-top: 4px solid #E52440;
+            position: relative;
+        }
+    }
+    &__logo {
+        width: 160px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        grid-gap: 50px;
+
+        @media (max-width: 768px) {
+            grid-gap: 0;
+        }
+        .navigation {
+
+            &__btn {
+                display: none;
+                position: relative;
+                margin-right: 5px;
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+                span {
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    background: #E52440;
+                    border-radius: 2px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 7px;
+                    }
+                    &:last-child {
+                        height: 2.5px;
+                    }
+                    &:first-child {
+                        height: 2.5px;
+                    }
+                }
+            }
+            &__menu {
+                display: flex;
+                grid-gap: 12px;
+
+                @media (max-width: 768px) {
+                    position: absolute;
+                    right: 30px;
+                    top: 50px;
+                    background: #981921;
+                    box-shadow: 0px 10px 25px rgba(152, 25, 33, 0.15);
+                    border-radius: 5px;
+                    grid-gap: 8px;
+                    padding: 18px;
+                    display: none;
+
+                    &.active {
+                        display: grid;
+                    }
+                }
+                &_link {
+                    display: block;
+                    padding: 10px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $middleBlack;
+
+                    @media (max-width: 768px) {
+                        padding: 0 0 0 10px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .contact {
+
+            &__btn {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+                
+                a {
+                    display: block;
+                    background: #E52440;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+                    border-radius: 5px;
+                    padding: 10px 40.5px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
